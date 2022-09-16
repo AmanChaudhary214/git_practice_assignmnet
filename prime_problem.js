@@ -1,18 +1,17 @@
-let i=2, prime=0;
-while (i<num)
+let num=13;
+
+let i=1;
+let count=0;
+while (i<=num)
 {
-    if (num%i==0)
-    {
-        prime=1;
-        break;
+    if (num%i==0){
+        count++
     }
     i++;
 }
-if (prime==1)
-{
-    console.log("No");
+if (count==2){
+    console.log("Prime");
 }
-else
-{
-    console.log("Yes");
+else{
+    console.log("Not prime");
 }
